@@ -1,14 +1,14 @@
 {
-  "$schema": "./node_modules/nx/schemas/nx-schema.json",
-  "workspaceLayout": {
-    "appsDir": "apps",
-    "libsDir": "libs"
-  },
-  "defaultBase": "master",
-  "namedInputs": {
-    "default": ["{projectRoot}/**/*", "sharedGlobals"],
-    "production": ["default"],
-    "sharedGlobals": []
-  },
-  "nxCloudAccessToken": "YzAwNjZmZWQtZmIxZS00MmUzLWJmMDUtMWVmYTIwNTY4MzVkfHJlYWQtd3JpdGU="
+	"$schema": "./node_modules/nx/schemas/nx-schema.json",
+	"workspaceLayout": {
+		"appsDir": "apps",
+		"libsDir": "libs"
+	},
+	"defaultBase": "master",
+	"namedInputs": {
+		"default": ["{projectRoot}/**/*", "sharedGlobals"],
+		"production": ["default"],
+		"sharedGlobals": []
+	},
+	"nxCloudAccessToken": "YzAwNjZmZWQtZmIxZS00MmUzLWJmMDUtMWVmYTIwNTY4MzVkfHJlYWQtd3JpdGU="
 }

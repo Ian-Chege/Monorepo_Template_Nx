@@ -1,12 +1,13 @@
 {
-  "name": "@fwk/source",
-  "version": "0.0.0",
-  "license": "MIT",
-  "private": true,
-  "devDependencies": {
-    "@nx/js": "18.2.4",
-    "@nx/workspace": "18.2.4",
-    "nx": "18.2.4"
-  },
-  "packageManager": "yarn@4.1.1"
+	"name": "@fwk/source",
+	"version": "0.0.0",
+	"license": "MIT",
+	"private": true,
+	"devDependencies": {
+		"@nx/js": "18.2.4",
+		"@nx/workspace": "18.2.4",
+		"nx": "18.2.4",
+		"prettier": "^3.2.5"
+	},
+	"packageManager": "yarn@4.1.1"
 }

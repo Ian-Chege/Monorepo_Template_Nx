@@ -1,0 +1,9 @@
+/dist
+/coverage
+/.nx/cache
+.yarn
+package.json
+yarn.lock
+.yarnrc.yml
+node_modules
+README.md
