@@ -7,8 +7,49 @@
 	"defaultBase": "master",
 	"namedInputs": {
 		"default": ["{projectRoot}/**/*", "sharedGlobals"],
-		"production": ["default"],
+		"production": [
+			"default",
+			"!{projectRoot}/**/?(*.)+(spec|test).[jt]s?(x)?(.snap)",
+			"!{projectRoot}/tsconfig.spec.json",
+			"!{projectRoot}/.eslintrc.json",
+			"!{projectRoot}/eslint.config.js"
+		],
 		"sharedGlobals": []
 	},
-	"nxCloudAccessToken": "YzAwNjZmZWQtZmIxZS00MmUzLWJmMDUtMWVmYTIwNTY4MzVkfHJlYWQtd3JpdGU="
+	"nxCloudAccessToken": "YTZkZWE5NGEtYzk1NS00ZTYwLTk2N2UtMmI4OGM2YjhkMTY2fHJlYWQtd3JpdGU=",
+	"plugins": [
+		{
+			"plugin": "@nx/vite/plugin",
+			"options": {
+				"buildTargetName": "build",
+				"testTargetName": "test",
+				"serveTargetName": "serve",
+				"previewTargetName": "preview",
+				"serveStaticTargetName": "serve-static"
+			}
+		},
+		{
+			"plugin": "@nx/eslint/plugin",
+			"options": {
+				"targetName": "lint"
+			}
+		}
+	],
+	"generators": {
+		"@nx/react": {
+			"application": {
+				"babel": true,
+				"style": "none",
+				"linter": "eslint",
+				"bundler": "vite"
+			},
+			"component": {
+				"style": "none"
+			},
+			"library": {
+				"style": "none",
+				"linter": "eslint"
+			}
+		}
+	}
 }
