@@ -1,9 +1,9 @@
 export function App() {
 	return (
-		<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+		<div>
 			<h1>
 				<span> Hello there, </span>
-				Welcome app-one 👋
+				Welcome app-two 👋
 			</h1>
 		</div>
 	)
@@ -29,6 +29,6 @@ if (import.meta.vitest) {
 
 	it('should have a greeting as the title', () => {
 		const { getByText } = render(<App />)
-		expect(getByText(/Welcome app-one/gi)).toBeTruthy()
+		expect(getByText(/Welcome app-two/gi)).toBeTruthy()
 	})
 }
