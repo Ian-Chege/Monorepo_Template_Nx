@@ -1,3 +1,5 @@
+import { Timer } from '@fwk-nx/ui-timer'
+
 export function App() {
 	return (
 		<div>
@@ -5,6 +7,7 @@ export function App() {
 				<span> Hello there, </span>
 				Welcome app-two 👋
 			</h1>
+			<Timer />
 		</div>
 	)
 }

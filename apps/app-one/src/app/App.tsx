@@ -1,3 +1,5 @@
+import { Timer } from '@fwk-nx/ui-timer'
+
 export function App() {
 	return (
 		<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
@@ -5,6 +7,8 @@ export function App() {
 				<span> Hello there, </span>
 				Welcome app-one 👋
 			</h1>
+
+			<Timer />
 		</div>
 	)
 }
